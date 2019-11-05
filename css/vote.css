@@ -1,0 +1,12 @@
+html,
+body {
+    background: url('../img/bg.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+article {
+    text-align: center;
+    letter-spacing: 9px;
+    background: #ffc107;
+    
+}

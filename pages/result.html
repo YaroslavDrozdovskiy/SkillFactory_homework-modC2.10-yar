@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/result.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <article>
+          <h1>Результаты голосования</h1>
+      </article>
+    <div class="container vh-100 d-flex flex-row flex-lg-column justify-content-center">
+      <div class="row mx-1">
+        <div class="col d-flex align-items-center justify-content-center col-name-animal bg-danger mx-2">Кошки</div>
+        <div class="col d-flex align-items-center justify-content-center col-name-animal bg-success mx-2">Cобаки</div>
+        <div class="col d-flex align-items-center justify-content-center col-name-animal bg-info mx-2">Попугаи</div>
+      </div>
+      <div class="row mx-1">
+        <div class="col col-animal col-cats mx-2">
+          <p class="perc-info" id="perc-cats">0%</p>
+          <svg class="progress-ring progress-cats" width="240" height="240">
+            <circle
+              class="progress-ring__circle progress-circle-cats"
+              stroke="#dc3545"
+              fill="black"
+              fill-opacity=".1"
+              stroke-width="4"
+              cx="120"
+              cy="120"
+              r="112"
+            />
+          </svg>
+        </div>
+        <div class="col col-animal col-dogs mx-2">
+          <p class="perc-info" id="perc-dogs">0%</p>
+          <svg class="progress-ring progress-dogs" width="240" height="240">
+            <circle
+              class="progress-ring__circle progress-circle-dogs"
+              stroke="#28a745"
+              fill="black"
+              fill-opacity=".1"
+              stroke-width="4"
+              cx="120"
+              cy="120"
+              r="112"
+            />
+          </svg>
+        </div>
+        <div class="col col-animal col-parrots mx-2">
+          <p class="perc-info" id="perc-parrots">0%</p>
+          <svg
+            class="progress-ring progress-parrots "
+            width="240"
+            height="240"
+            fill="yellow"
+            fill-opacity=".1"
+          >
+            <circle
+              class="progress-ring__circle progress-circle-parrots"
+              stroke="#17a2b8"
+              stroke-shadow="black"
+              fill="black"
+              fill-opacity=".1"
+              stroke-width="4"
+              cx="120"
+              cy="120"
+              r="112"
+            />
+        </svg>
+        </dib>
+        
+        </div>
+      </div>
+    </div>
+    <script src="../js/result.js"></script>
+  </body>
+</html>

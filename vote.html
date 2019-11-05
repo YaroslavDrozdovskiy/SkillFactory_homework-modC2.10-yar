@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/vote.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <article>
+      <h1>Проголосуй за любимое животное</h1>
+    </article>
+    <div class="container vh-100 d-flex align-items-center">
+      <div class="btn-group-vertical btn-group-lg btn-block">
+        <button
+          type="button"
+          onclick="createXMLHttpRequest('cats')"
+          class="btn-cats btn btn-danger my-2"
+        >
+          Кошки
+        </button>
+        <button
+          type="button"
+          onclick="createXMLHttpRequest('dogs')"
+          class="btn-dogs btn btn-warning my-2"
+        >
+          Собаки
+        </button>
+        <button
+          type="button"
+          onclick="createXMLHttpRequest('parrots')"
+          class="btn-parrots btn btn-primary my-2"
+        >
+          Попугаи
+        </button>
+        <button type="button" class="btn btn-results btn-outline-success my-2">
+          Узнать результаты
+        </button>
+      </div>
+    </div>
+
+    <script src="js/request.js"></script>
+  </body>
+</html>

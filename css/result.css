@@ -1,0 +1,55 @@
+html,
+body {
+
+    background: url('../img/bg.jpeg') no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
+}
+ article {
+     text-align: center;
+     letter-spacing: 9px;
+     background: #ffc107;
+     
+ }
+
+.col-name-animal {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    
+    text-align: center;
+    
+
+}
+
+.col-animal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: ; 
+}
+
+.perc-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.progress-ring__circle {
+    position: relative;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 0.3s;
+
+    
+}
